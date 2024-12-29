@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hyperraum Rechner</title>
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif;">
+        <label>Origin Planet
+            <select id="origin">
+                <option>Kuat</option>
+                <option>Rishi</option>
+                <option>Coruscant</option>
+                <option>Lorrd</option>
+                <option>Nerrif</option>
+                <option>Daiyu</option>
+                <option>Ord Mantell</option>
+                <option>Er'Kit</option>
+                <option>Devaron</option>
+                <option>Arkania</option>
+                <option>Malastare</option>
+                <option>Anaxes</option>
+                <option>Felucia</option>
+                <option>Dantooine</option>
+                <option>Khorm</option>
+                <option>Anoat</option>
+                <option>Alzoc III</option>
+                <option>Rhen Var</option>
+            </select>
+        </label>
+        <label>Destination Planet
+            <select id="destination">
+                <option>Kuat</option>
+                <option>Rishi</option>
+                <option>Coruscant</option>
+                <option>Lorrd</option>
+                <option>Nerrif</option>
+                <option>Daiyu</option>
+                <option>Ord Mantell</option>
+                <option>Er'Kit</option>
+                <option>Devaron</option>
+                <option>Arkania</option>
+                <option>Malastare</option>
+                <option>Anaxes</option>
+                <option>Felucia</option>
+                <option>Dantooine</option>
+                <option>Khorm</option>
+                <option>Anoat</option>
+                <option>Alzoc III</option>
+                <option>Rhen Var</option>
+            </select>
+        </label>
+        <button onclick="main()">Calculate</button>
+        <div id="Solution"></div>
+        <script>
+            function main() {
+            var origindropdown = document.getElementById("origin");
+            var origin = origindropdown.value;
+            if(origin == "Kuat") {
+                firstNumberOrigin = 13;
+                secondNumberOrigin = 10;
+            }
+            if(origin == "Rishi") {
+                firstNumberOrigin = 19;
+                secondNumberOrigin = 15;
+            }
+            if(origin == "Coruscant") {
+                firstNumberOrigin = 12;
+                secondNumberOrigin = 9;
+            }
+            if(origin == "Lorrd") {
+                firstNumberOrigin = 14;
+                secondNumberOrigin = 4;
+            }
+            if(origin == "Nerrif") {
+                firstNumberOrigin = 15;
+                secondNumberOrigin = 16;
+            }
+            if(origin == "Daiyu") {
+                firstNumberOrigin = 13;
+                secondNumberOrigin = 10;
+            }
+            if(origin == "Ord Mantell") {
+                firstNumberOrigin = 12;
+                secondNumberOrigin = 7;
+            }
+            if(origin == "Er'Kit") {
+                firstNumberOrigin = 13;
+                secondNumberOrigin = 6;
+            }
+            if(origin == "Devaron") {
+                firstNumberOrigin = 13;
+                secondNumberOrigin = 13;
+            }
+            if(origin == "Arkania") {
+                firstNumberOrigin = 13;
+                secondNumberOrigin = 8;
+            }
+            if(origin == "Malastare") {
+                firstNumberOrigin = 14;
+                secondNumberOrigin = 16;
+            }
+            if(origin == "Anaxes") {
+                firstNumberOrigin = 12;
+                secondNumberOrigin = 9;
+            }
+            if(origin == "Felucia") {
+                firstNumberOrigin = 18;
+                secondNumberOrigin = 6;
+            }
+            if(origin == "Dantooine") {
+                firstNumberOrigin = 12;
+                secondNumberOrigin = 4;
+            }
+            if(origin == "Khorm") {
+                firstNumberOrigin = 16;
+                secondNumberOrigin = 8;
+            }
+            if(origin == "Anoat") {
+                firstNumberOrigin = 11;
+                secondNumberOrigin = 18;
+            }
+            if(origin == "Alzoc III") {
+                firstNumberOrigin = 16;
+                secondNumberOrigin = 19;
+            }
+            if(origin == "Rhen Var") {
+                firstNumberOrigin = 18;
+                secondNumberOrigin = 6;
+            }
+
+            
+            var destinationdropdown = document.getElementById("destination");
+            var destination = destinationdropdown.value;
+            if(destination == "Kuat") {
+                firstNumberDestination = 13;
+                secondNumberDestination = 10;
+            }
+            if(destination == "Rishi") {
+                firstNumberDestination = 19;
+                secondNumberDestination = 15;
+            }
+            if(destination == "Coruscant") {
+                firstNumberDestination = 12;
+                secondNumberDestination = 9;
+            }
+            if(destination == "Lorrd") {
+                firstNumberDestination = 14;
+                secondNumberDestination = 4;
+            }
+            if(destination == "Nerrif") {
+                firstNumberDestination = 15;
+                secondNumberDestination = 16;
+            }
+            if(destination == "Daiyu") {
+                firstNumberDestination = 13;
+                secondNumberDestination = 10;
+            }
+            if(destination == "Ord Mantell") {
+                firstNumberDestination = 12;
+                secondNumberDestination = 7;
+            }
+            if(destination == "Er'Kit") {
+                firstNumberDestination = 13;
+                secondNumberDestination = 6;
+            }
+            if(destination == "Devaron") {
+                firstNumberDestination = 13;
+                secondNumberDestination = 13;
+            }
+            if(destination == "Arkania") {
+                firstNumberDestination = 13;
+                secondNumberDestination = 8;
+            }
+            if(destination == "Malastare") {
+                firstNumberDestination = 14;
+                secondNumberDestination = 16;
+            }
+            if(destination == "Anaxes") {
+                firstNumberDestination = 12;
+                secondNumberDestination = 9;
+            }
+            if(destination == "Felucia") {
+                firstNumberDestination = 18;
+                secondNumberDestination = 6;
+            }
+            if(destination == "Dantooine") {
+                firstNumberDestination = 12;
+                secondNumberDestination = 4;
+            }
+            if(destination == "Khorm") {
+                firstNumberDestination = 16;
+                secondNumberDestination = 8;
+            }
+            if(destination == "Anoat") {
+                firstNumberDestination = 11;
+                secondNumberDestination = 18;
+            }
+            if(destination == "Alzoc III") {
+                firstNumberDestination = 16;
+                secondNumberDestination = 19;
+            }
+            if(destination == "Rhen Var") {
+                firstNumberDestination = 18;
+                secondNumberDestination = 6;
+            }
+            firstvalue = firstNumberOrigin - firstNumberDestination;
+            secondValue = secondNumberOrigin - secondNumberDestination;
+            firsttime = firstvalue * 5;
+            secondtime = secondValue * 5;
+            if (firsttime < 0){
+                firsttime = -firsttime;
+            }
+            if (secondtime < 0){
+                secondtime = -secondtime;
+            }
+            time = firsttime + secondtime + 5;
+            console.log(time + " Minutes");
+            document.getElementById("Solution").innerHTML = time + " Minutes";
+        }
+        </script>
+    </body>
+</html>
